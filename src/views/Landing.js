@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import cover from "../assets/img/cover.jpg";
 import about from "../assets/img/others.jpg";
 import Navbar from "components/Navbar.js";
 import Footer from "components/Footer.js";
 import Product from "./Product";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Landing() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
     <>
       <Navbar transparent />
@@ -29,7 +39,7 @@ export default function Landing() {
           </div>
 
           {/* caption on cover image */}
-          <div className="container relative mx-auto">
+          <div className="container relative mx-auto" data-aos={"fade-left"}>
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
@@ -49,7 +59,10 @@ export default function Landing() {
         <section className="pb-20 mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap items-center mt-32">
-              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div
+                className="w-full md:w-5/12 px-4 mr-auto ml-auto "
+                data-aos={"fade-left"}
+              >
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-dumbbell text-xl"></i>
                 </div>
@@ -70,7 +83,10 @@ export default function Landing() {
                 </a>
               </div>
 
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto ">
+              <div
+                className="w-full md:w-4/12 px-4 mr-auto ml-auto "
+                data-aos={"flip-right"}
+              >
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-gray-100">
                   <img
                     alt=".About us"
@@ -112,7 +128,7 @@ export default function Landing() {
               {" "}
               Our Offers
             </h1>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap" data-aos={"fade-down-right"}>
               <Product
                 title="Daily"
                 description=" Pariatur ipsum enim dolore et Lorem. Pariatur ipsum enim dolore et Lorem."
@@ -154,7 +170,12 @@ export default function Landing() {
             </svg>
           </div>
 
-          <div className="container mx-auto px-4">
+          <div
+            className="container mx-auto px-4"
+            data-aos={"fade-down"}
+            data-aos-easing={"linear"}
+            data-aos-duration={"1500"}
+          >
             <div className="items-center flex flex-wrap">
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                 <img
@@ -204,7 +225,11 @@ export default function Landing() {
         <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24 text-white">
-              <div className="w-full lg:w-6/12 px-4">
+              <div
+                className="w-full lg:w-6/12 px-4"
+                data-aos={"fade-up"}
+                data-aos-anchor-placement={"bottom-center"}
+              >
                 <h2 className="text-4xl font-semibold ">
                   Here are our Instructors
                 </h2>
@@ -215,7 +240,12 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap">
+            <div
+              className="flex flex-wrap"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
@@ -357,7 +387,11 @@ export default function Landing() {
 
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
-              <div className="w-full lg:w-6/12 px-4">
+              <div
+                className="w-full lg:w-6/12 px-4"
+                data-aos={"fade-down"}
+                data-aos-anchor-placement={"up-center"}
+              >
                 <h2 className="text-4xl font-semibold text-white">
                   Conntact Us
                 </h2>
@@ -373,7 +407,12 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap mt-12 justify-center">
+            <div
+              className="flex flex-wrap mt-12 justify-center"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-black p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-medal text-xl"></i>
@@ -413,7 +452,10 @@ export default function Landing() {
             </div>
           </div>
         </section>
-        <section className="relative block py-24 lg:pt-0 bg-black">
+        <section
+          className="relative block py-24 lg:pt-0 bg-black"
+          data-aos="zoom-in"
+        >
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
