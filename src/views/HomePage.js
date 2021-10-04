@@ -128,7 +128,10 @@ export default function Landing() {
               {" "}
               Our Offers
             </h1>
-            <div className="flex flex-wrap" data-aos={"fade-down-right"}>
+            <div
+              className="flex flex-wrap justify-center"
+              data-aos={"fade-down-right"}
+            >
               <Product
                 title="Daily"
                 description=" Pariatur ipsum enim dolore et Lorem. Pariatur ipsum enim dolore et Lorem."
@@ -228,7 +231,7 @@ export default function Landing() {
               <div
                 className="w-full lg:w-6/12 px-4"
                 data-aos={"fade-up"}
-                data-aos-anchor-placement={"bottom-center"}
+                data-aos-anchor-placement={"top-center"}
               >
                 <h2 className="text-4xl font-semibold ">
                   Here are our Instructors
@@ -252,7 +255,7 @@ export default function Landing() {
                     alt="..."
                     src={require("assets/img/instructor1.jpg").default}
                     className="shadow-lg rounded max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    style={{ maxWidth: "220px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Ama Tompson</h5>
@@ -282,7 +285,7 @@ export default function Landing() {
                     alt="..."
                     src={require("assets/img/instructor 2.jpg").default}
                     className="shadow-lg rounded max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    style={{ maxWidth: "220px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">James Bor</h5>
@@ -306,7 +309,7 @@ export default function Landing() {
                     alt="..."
                     src={require("assets/img/instructor 2.jpg").default}
                     className="shadow-lg rounded max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    style={{ maxWidth: "220px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Harry Fish</h5>
@@ -336,7 +339,7 @@ export default function Landing() {
                     alt="..."
                     src={require("assets/img/instructor1.jpg").default}
                     className="shadow-lg rounded max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    style={{ maxWidth: "220px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">Jenna Aku</h5>
@@ -389,7 +392,7 @@ export default function Landing() {
             <div className="flex flex-wrap text-center justify-center">
               <div
                 className="w-full lg:w-6/12 px-4"
-                data-aos={"fade-down"}
+                data-aos={"fade-up"}
                 data-aos-anchor-placement={"up-center"}
               >
                 <h2 className="text-4xl font-semibold text-white">
@@ -455,8 +458,9 @@ export default function Landing() {
         <section
           className="relative block py-24 lg:pt-0 bg-black"
           data-aos="zoom-in"
+          data-aos-duration="1000"
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 mt-10">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
               <div className="w-full lg:w-6/12 px-4">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-100">

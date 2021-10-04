@@ -48,13 +48,7 @@ export default function Footer() {
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                 type="button"
               >
-                <i className="flex fab fa-dribbble"></i>
-              </button>
-              <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <i className="flex fab fa-github"></i>
+                <i className="flex fab fa-instagram"></i>
               </button>
             </div>
           </div>
@@ -64,10 +58,7 @@ export default function Footer() {
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
               Copyright © {new Date().getFullYear()} Power Gym
-              <a
-                href="https://www.creative-tim.com"
-                className="text-gray-600 hover:text-gray-900"
-              >
+              <a href="/" className="text-gray-600 hover:text-gray-900">
                 One Step at a time
               </a>
               .
